@@ -1,22 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body { 
+    background-color: rgb(43, 42, 42); 
+    }
+
 #container {
     width: 80%;
-    margin: 1.4%;
+    margin: auto;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     justify-items: center;
-}
+    transition: transform 0.5s ease;
+    }
 
 #title{
-    margin-left: 0 auto;
+    width: 35%;
+    margin: 20px auto;
+    text-align: center;
     font-size: 40px;
     font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     border-bottom: 2px solid red;
-    width: 50%
-}
+    color: white;
+    padding-bottom: 1%;
+    }
 
 #container img {
     width: 80%;
@@ -27,7 +36,6 @@
     aspect-ratio: 1 / 1;
     
     }
-
     img:hover {
     transform: scale(1.10);
-}
+    }
